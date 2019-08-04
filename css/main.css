@@ -1,0 +1,191 @@
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: "Lato", sans-serif;
+}
+
+.nav-list {
+    list-style-type: none;
+    background-color: rgba(255,255,255,0.67);
+    display: block;
+    position: fixed;
+    width: 100%;
+    top:0;
+    transition: 0.3s;
+}
+
+.nav-item {
+    display: inline;
+    text-decoration: none;
+    float:left;
+    color:#000000;
+    font-size: 17px;
+    padding: 15px;
+    text-align: center;
+}
+
+.nav-item a {
+    text-decoration: none;
+    text-align: center;
+    font: 17px;
+    
+}
+
+#bgimage {
+/*    background-image: url(https://via.placeholder.com/1280x720.jpeg);*/
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-image: url(../assets/bgimage.jpg);
+    min-height:100%;
+    background-attachment: fixed;
+    background-position:bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: soft-light;
+}
+
+#user-info {
+    position: absolute;
+    width: 100%;
+    top: 20%;
+    text-align: center;
+    color: black;
+}
+
+#user-name {
+    position: relative;
+    text-align: center;
+    background-color: black;
+    font-size: 17px;
+    color: white;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    padding-left: 8px;
+    text-align: center;
+    font-family: sans-serif;
+    letter-spacing: 8px;
+    display: inline-block;
+    transform: skew(-20deg);
+    text-transform: none;   
+    margin: 0px;
+    margin-bottom: 4px;
+    opacity: 0.6;
+}
+
+#user-img {
+    position: relative;
+    height: 250px;
+    border: 4px solid #ffffff;
+    border-radius: 50%;
+}
+
+.window-page {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.window-page h2{
+    width: 100%; 
+   text-align: center; 
+   border-bottom: 1px solid #000; 
+   line-height: 0.1em;
+   margin: 10px 0 20px; 
+}
+
+.window-page h2 span{
+    background:#fff; 
+    font-family: "Lato", sans-serif;
+    padding:0 10px; 
+    font-size: 35px;
+}
+
+.window-page p {
+    /*margin-left: 5px;
+    margin-right: 5px;*/
+    width: 80%;
+    margin-left: 10%;
+    font-family: "Lato", sans-serif;
+    justify-content: center;
+    text-align: justify;
+}
+
+.window-page div {
+    
+    position: relative;
+    flex:1;
+    background-attachment: fixed;
+    background-position:bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: soft-light;
+}
+
+.image-container {
+    position: absolute;
+    margin: 5%;
+}
+
+.card-view-left {
+    position: relative;
+    width:50%;
+    padding: 6px;
+    border-radius: 11px;
+    background-color: aliceblue;
+    opacity: 0.86;
+}
+
+.skill-head {
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    margin: 5px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.skill {
+     margin: 5px;
+    padding-top: 5px;
+    padding-left: 5px;
+    align-content: center;
+/*    position: relative;*/
+/*    margin: 5px;*/
+}
+
+.skill a{
+/*    position: absolute;*/
+    display: inline-block;
+/*    width: 20%;*/
+    align-content: center;
+    vertical-align: text-top;
+    font-size: 12px;
+    height: 12px;
+}
+
+.progress {
+/*    position: absolute;*/
+    display: inline-block;
+    width: 80%;
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+    height: 10px;
+    float: right;
+}
+
+.progress div {
+    background-color: green;
+    height: 100%;
+    border-radius: 6px;
+}
+
+
