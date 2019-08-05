@@ -20,7 +20,7 @@
             <p><img id="user-img" src="assets/user.jpg" alt="image"></p>
             <p id="user-name"><a style="transform: skew(20deg);display: inline-block">Ankith Reddy</a></p>
             <br>
-            <p id="user-name"><a style="transform: skew(20deg);display: inline-block">Full Stack Developer</a></p>
+            <p id="user-name"><a style="transform: skew(20deg);display: inline-block">Application Developer</a></p>
         </div>
 	</div>
   
@@ -48,7 +48,7 @@
         </p>-->
         <div style="background-image: url(assets/skill.jpg)">
             <div class="image-container">
-                <div class="card-view-left">
+                <div id="skills-section" class="card-view-left">
                     <h4 class="skill-head">Languages</h4>
                     <div class="skill">
                         <a>Java</a>
@@ -68,6 +68,44 @@
                             <div style="width:50%"></div>
                         </div>
                     </div>
+                    <div class="skill">
+                        <a>HTML</a>
+                        <div class="progress">
+                            <div style="width:85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <a>CSS</a>
+                        <div class="progress">
+                            <div style="width:65%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <a>Javascript</a>
+                        <div class="progress">
+                            <div style="width:70%"></div>
+                        </div>
+                    </div>
+                    <br>
+                    <hr>
+                    <br>
+                    <h4 class="skill-head">Tools</h4>
+                    <div class="skill-2">
+                       <img class="icon" src="assets/studio.jpg">
+                        <a>Android Studio</a>
+                    </div>
+                    <div class="skill-2" >
+                       <img class="icon" src="assets/photoshop.png">
+                        <a>Adobe Photoshop</a>
+                    </div>
+                    <div class="skill-2">
+                       <img class="icon" src="assets/arduino.jpg">
+                        <a>Arduino IDE</a>
+                    </div>
+                    <div class="skill-2">
+                       <img class="icon" src="assets/processing.png">
+                        <a>Java Processing</a>
+                    </div>
                     
                 </div>
             </div>
@@ -75,11 +113,11 @@
     </section>
    
    
-    <div class="container">
+    <!--<div class="container">
         <div class="blurb">
             <h1>Hi there, I'm Ankith Reddy!</h1>
-        </div><!-- /.blurb -->
-    </div><!-- /.container -->
+        </div>
+    </div>
     <div>
         <p id="sec1">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
@@ -93,15 +131,36 @@
         <p id="sec3">
             It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
         </p>
-    </div>
+    </div>-->
     
     
-    <footer>
-        <ul>
-            <li><a href="mailto:ankith10.ar@gmail.com">email</a></li>
-            <li><a href="https://github.com/ankith10ar">github.com/ankith10ar</a></li>
-        </ul>
+    <footer class="declaration">
+        <div class="footer-float-left">
+           <br>
+           <br>
+           <object class="footer-icon" type="image/svg+xml" data="assets/mail.svg">
+              Your browser does not support SVG
+            </object>
+            <a class="footer-links" href="mailto:ankith10.ar@gmail.com">email</a>
+            <br>
+            <object class="footer-icon" type="image/svg+xml" data="assets/github.svg">
+              Your browser does not support SVG
+            </object>
+            <a class="footer-links"href="https://github.com/ankith10ar">github.com/ankith10ar</a>
+            <br>
+            <br>
+        </div>
+        <div class="footer-float-right">
+            <h3>Follow Me On</h3>
+            <div class="follow-link facebook"></div>
+            <div class="follow-link twitter"></div>
+            <div class="follow-link instagram"></div>
+            <div class="follow-link linkedin"></div>
+        </div>
     </footer>
 	</body>
+<!--	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
+ <script src="http://imakewebthings.github.com/jquery-waypoints/waypoints.min.js" type="text/javascript"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 </html>

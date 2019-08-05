@@ -137,10 +137,22 @@ html, body {
 .card-view-left {
     position: relative;
     width:50%;
-    padding: 6px;
+    padding: 3%;
     border-radius: 11px;
     background-color: aliceblue;
     opacity: 0.86;
+}
+
+@media only screen and (max-width: 400px) {
+    .card-view-left {
+        width:95%;
+    }
+}
+
+.card-view-left hr{
+    color: grey;
+    background-color: grey;
+    margin: 10px;
 }
 
 .skill-head {
@@ -166,7 +178,7 @@ html, body {
 /*    width: 20%;*/
     align-content: center;
     vertical-align: text-top;
-    font-size: 12px;
+    font-size: 16px;
     height: 12px;
 }
 
@@ -188,4 +200,91 @@ html, body {
     border-radius: 6px;
 }
 
+.skill-2 {
+     margin: 5px;
+    padding-top: 5px;
+    padding-left: 5px;
+    align-content: center;
+/*    position: relative;*/
+/*    margin: 5px;*/
+}
+
+.skill-2 a{
+/*    position: absolute;*/
+    display: inline-block;
+/*    width: 20%;*/
+    align-content: center;
+    vertical-align: super;
+    font-size: 16px;
+    
+}
+
+.skill-2 img{
+    display: inline-block;
+    height: 25px;
+    margin-right: 25px;
+}
+
+.declaration {
+    padding: 10px;
+    background-color: #ebebeb;
+    display: contents;
+}
+
+.footer-float-left {
+    float:left;
+}
+
+.footer-float-right {
+    float:right;
+    margin-right: 25px;
+    margin-top: 15px;
+}
+
+.footer-float-right h3 {
+    color: #7d7d7d;
+    margin-bottom: 10px;
+}
+
+.footer-icon {
+    display: inline-block;
+    height: 25px;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.mail-icon {
+    background-image: url(../assets/mail.svg);
+}
+
+.footer-links {
+    display: inline-block;
+    text-decoration: none;
+    color: #7d7d7d;
+    vertical-align: super;
+}
+
+.follow-link {
+    display: inline-block;
+    margin-left: 8px;
+    height: 35px;
+    width: 35px;
+    background-size: contain;
+}
+
+.facebook {
+    background-image: url(../assets/facebook.png);
+}
+
+.twitter {
+    background-image: url(../assets/twitter.png);
+}
+
+.instagram {
+    background-image: url(../assets/instagram.png);
+}
+
+.linkedin {
+    background-image: url(../assets/linkedin.png);
+}
 
