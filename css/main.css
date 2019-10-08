@@ -119,7 +119,6 @@ html, body {
 }
 
 .window-page div {
-    
     position: relative;
     flex:1;
     background-attachment: fixed;
@@ -197,8 +196,16 @@ html, body {
 .progress div {
     background-color: green;
     height: 100%;
+    width: 0;
     border-radius: 6px;
+/*    transition: width 4s;*/
 }
+
+/*
+.progress div:focus {
+    
+}
+*/
 
 .skill-2 {
      margin: 5px;
@@ -224,6 +231,205 @@ html, body {
     height: 25px;
     margin-right: 25px;
 }
+
+
+
+
+
+
+
+.project-section {
+    margin: 10% 5%;
+    background-color: white;
+    opacity: 0.86;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.project-section h3 {
+    text-align: left;
+    font-size: 3.3em;
+    margin: 0;
+}
+
+.project-section p{
+    font-family: sans-serif;
+    text-align: left;
+    margin: 0.5em 0;
+}
+
+.project-section p a{
+    text-decoration: none;
+}
+
+.project-section p a:link{
+    font-weight: 300;
+    color: black;
+}
+
+.project-section p a:hover{
+    font-weight: bold;
+    color: black;
+}
+
+.project-section p a:visited{
+    font-weight: 300;
+    color: black;
+}
+
+
+
+
+.window-page div .slide-left {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 5%;
+}
+
+.window-page div .slide-left:hover{
+  background: rgba(0,0,0,0.3);
+}
+
+.window-page div .slide-right {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 5%;
+}
+
+.window-page div .slide-right:hover{
+  background: rgba(0,0,0,0.3);
+}
+
+.window-page div .arrow {
+  cursor: pointer;
+  height: 120px;
+  left: 47%;
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  transition: transform .1s;
+  width: 80px;
+}
+
+
+
+.window-page div .arrow-top,.window-page div .arrow-bottom {
+  background-color: #666;
+  height: 4px;
+  left: -6px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+.window-page div .arrow-top:after,.window-page div .arrow-bottom:after {
+  background-color: #fff;
+  content: '';
+  height: 100%;
+  position: absolute;
+  top: 0;
+  transition: all 0.15s;
+}
+.window-page div .arrow-top {
+  transform: rotate(45deg);
+  transform-origin: bottom right;
+}
+.window-page div .arrow-top:after {
+  left: 100%;
+  right: 0;
+  transition-delay: 0s;
+}
+.window-page div .arrow-bottom {
+  transform: rotate(-45deg);
+  transform-origin: top right;
+}
+.arrow-bottom:after {
+  left: 0;
+  right: 100%;
+  transition-delay: 0.15s;
+}
+.arrow:hover .arrow-top:after {
+  left: 0;
+  transition-delay: 0.15s;
+}
+.arrow:hover .arrow-bottom:after {
+  right: 0;
+  transition-delay: 0s;
+}
+.arrow:active {
+  transform: translateX(-50%) translateY(-50%) scale(0.9);
+}
+
+
+/*Left arrow*/
+
+.window-page div .arrow-left {
+  cursor: pointer;
+  height: 120px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  transition: transform .1s;
+  width: 80px;
+}
+.window-page div .arrow-top-left,.window-page div .arrow-bottom-left {
+  background-color: #666;
+  height: 4px;
+  right: -6px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+.window-page div .arrow-top-left:after,.window-page div .arrow-bottom-left:after {
+  background-color: #fff;
+  content: '';
+  height: 100%;
+  position: absolute;
+  top: 0;
+  transition: all 0.15s;
+}
+.window-page div .arrow-top-left {
+  transform: rotate(45deg);
+  transform-origin: top left;
+}
+.window-page div .arrow-top-left:after {
+  left: 100%;
+  right: 0;
+  transition-delay: 0s;
+}
+.window-page div .arrow-bottom-left {
+  transform: rotate(-45deg);
+  transform-origin: bottom left;
+}
+.arrow-bottom-left:after {
+  left: 0;
+  right: 100%;
+  transition-delay: 0.15s;
+}
+.arrow-left:hover .arrow-top-left:after {
+  left: 0;
+  transition-delay: 0s;
+}
+.arrow-left:hover .arrow-bottom-left:after {
+  right: 0;
+  transition-delay: 0.15s;
+}
+.arrow-left:active {
+  transform: translateX(-50%) translateY(-50%) scale(0.9);
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .declaration {
     padding: 10px;
@@ -287,4 +493,10 @@ html, body {
 .linkedin {
     background-image: url(../assets/linkedin.png);
 }
+
+
+
+
+
+
 

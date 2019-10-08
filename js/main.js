@@ -76,3 +76,85 @@ function move(){
 }
 
 
+
+
+let currProj = 1;
+let totalProj = 1;
+
+function arrows()
+{
+    if (currProj==1)
+    {
+        $('.slide-left').hide();
+        $('.slide-right').show();
+    }
+    else if (currProj===totalProj)
+    {
+        $('.slide-left').show();
+        $('.slide-right').hide();
+    }
+    else
+    {
+        $('.slide-left').show();
+        $('.slide-right').show();
+    }
+}
+
+
+$(document).ready(function () {
+    totalProj = document.getElementsByClassName('project-section').length;
+    $('.project-section').hide();
+    arrows();
+    document.getElementsByClassName('project-section')[currProj-1].style.display = 'block';
+});
+
+$('.arrow').click(function () {
+    document.getElementsByClassName('project-section')[currProj-1].style.display = 'none';
+    currProj+=1;
+    document.getElementsByClassName('project-section')[currProj-1].style.display = 'block';
+    arrows();
+});
+
+$('.arrow-left').click(function () {
+    document.getElementsByClassName('project-section')[currProj-1].style.display = 'none';
+    currProj-=1;
+    document.getElementsByClassName('project-section')[currProj-1].style.display = 'block';
+    arrows();
+});
+
+
+
+/*
+
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+
+*/
+
