@@ -96,7 +96,7 @@ function arrows()
     else
     {
         $('.slide-left').show();
-        $('.slide-right').show();
+        $('.slide-right').hide();
     }
 }
 
